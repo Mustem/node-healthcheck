@@ -1,0 +1,22 @@
+=== Node Healthcheck Report ===
+
+[1/7] Hostname
+mustafa-wsl
+
+[2/7] User
+mustafagul
+
+[3/7] Uptime
+up 1 hour, 10 minutes
+
+[4/7] Memory
+total        used        free      shared  buff/cache   available
+
+[5/7] Disk
+Filesystem      Size  Used Avail Use% Mounted on
+
+[6/7] Process Check: bash
+Process found: bash
+
+[7/7] Port Check: 22
+Port is listening: 22
