@@ -7,8 +7,10 @@ A simple Bash-based healthcheck tool for node operators using WSL or Ubuntu.
 - Hostname check
 - User check
 - Uptime check
+- Load average check
 - Memory check
 - Disk check
+- Root disk usage percentage
 - Process check
 - Port check
 
@@ -40,3 +42,4 @@ This means:
 - Add colorized output
 - Add log file export
 - Add custom process list
+- Add warning thresholds
