@@ -13,6 +13,7 @@ A simple Bash-based healthcheck tool for node operators using WSL or Ubuntu.
 - Root disk usage percentage
 - Process check
 - Port check
+- Overall status summary
 
 ## Structure
 
