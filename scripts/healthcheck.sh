@@ -3,6 +3,12 @@
 PROCESS_NAME="${1:-bash}"
 PORT_TO_CHECK="${2:-22}"
 
+if ! [[ "$PORT_TO_CHECK" =~ ^[0-9]+$ ]]; then
+  echo "Usage: bash scripts/healthcheck.sh <process_name> <port>"
+  echo "Example: bash scripts/healthcheck.sh bash 22"
+  exit 1
+fi
+
 echo "=== Node Healthcheck Report ==="
 echo
 
