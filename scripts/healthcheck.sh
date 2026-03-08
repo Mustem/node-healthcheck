@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 
-PROCESS_NAME="${1:-bash}"
-PORT_TO_CHECK="${2:-22}"
+if [ "$#" -ne 2 ]; then
+  echo "Usage: bash scripts/healthcheck.sh <process_name> <port>"
+  echo "Example: bash scripts/healthcheck.sh bash 22"
+  exit 1
+fi
+
+PROCESS_NAME="$1"
+PORT_TO_CHECK="$2"
 
 if ! [[ "$PORT_TO_CHECK" =~ ^[0-9]+$ ]]; then
+  echo "Error: port must be a numeric value."
   echo "Usage: bash scripts/healthcheck.sh <process_name> <port>"
   echo "Example: bash scripts/healthcheck.sh bash 22"
   exit 1
