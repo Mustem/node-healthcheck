@@ -11,6 +11,7 @@ A simple Bash-based healthcheck tool for node operators using WSL or Ubuntu.
 - Memory check
 - Disk check
 - Root disk usage percentage
+- Disk usage warning threshold
 - Process check
 - Port check
 - Overall status summary
@@ -43,4 +44,4 @@ This means:
 - Add colorized output
 - Add log file export
 - Add custom process list
-- Add warning thresholds
+- Add warning thresholds for memory and load
