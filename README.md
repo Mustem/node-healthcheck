@@ -30,9 +30,9 @@ Runs a quick health report for a local machine.
 ## Usage
 
 Run:
-bash scripts/healthcheck.sh
+bash scripts/healthcheck.sh <process_name> <port>
 
-Optional:
+Example:
 bash scripts/healthcheck.sh bash 22
 
 This means:
